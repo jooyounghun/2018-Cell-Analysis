@@ -1,0 +1,76 @@
+extends layout
+
+block content
+  nav.navbar.navbar-default
+    .container-fluid
+      .navbar-header
+        a.navbar-brand(href='#') Cell Image Processing
+      ul.nav.navbar-nav
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+            | Before Data Processing 
+            span.caret
+          ul.dropdown-menu
+            li
+              a(onclick="C2DL_MSC()") C2DL-MSC
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+            | After Data Processing 
+            span.caret
+          ul.dropdown-menu
+            li
+              a(onclick="C2DL_MSC()") C2DL-MSC
+            li
+              a(onclick="C3DH_H157()") C3DH-H157
+            li
+              a(onclick="C3DL_HT1080()") C3DL-HT1080
+            li
+              a(onclick="DIC_C2DH_CE()") DIC-C2DH-CE
+            li
+              a(onclick="Fluo_N3DH_CE()") Fluo-N3DH-CE
+            li
+              a(onclick="Fluo_N3DL_DRO()") Fluo-N3DL-DRO
+            li
+              a(onclick="N2D_SIM()") N2D-SIM
+            li
+              a(onclick="N2DH_GOWT1()") N2DH-GOWT1
+            li
+              a(onclick="N2DL_HeLa()") N2DL-HeLa
+            li
+              a(onclick="N3D_SIM()") N3D-SIM
+            li
+              a(onclick="N3DH_CHO()") N3DH_CHO
+            li
+              a(onclick="PhC_C2DH_U373()") PhC-C2DH-U373
+            li
+              a(onclick="PhC_C2DL_PSCss()") PhC-C2DL-PSCss
+           
+
+  nav.navbar.navbar-default
+    .container-fluid
+      .navbar-header
+        a.navbar-brand(href='#') Text Processing From Image DATASET
+      ul.nav.navbar-nav
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+            | Things of Correlation
+            span.caret
+          ul.dropdown-menu
+            li
+              a(onclick="C2DL_MSC()") C2DL-MSC
+
+
+
+
+
+
+
+  #date(align="center")
+    input.form-control.form-control-user#datepicker1(type="text", style = "width: 120px; text-align: center;")
+    label.label-user(style = "text-align: center;") &nbsp;&nbsp;~&nbsp;&nbsp; 
+    input.form-control.form-control-user#datepicker2(type="text", style = "width: 120px; text-align: center;")
+  br  
+  .row
+      #myDiv(style='height: 680px; margin-left: 40px').col-md-11.col-sm-1
+      .col-md-1.col-sm-1
+
