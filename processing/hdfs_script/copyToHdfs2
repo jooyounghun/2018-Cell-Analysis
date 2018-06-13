@@ -1,0 +1,11 @@
+#!/bin/bash
+path=~/nucleus/*
+${HADOOP_HOME}/bin/hdfs dfs -mkdir -p /usr/${USERNAME}/source
+${HADOOP_HOME}/bin/hdfs dfs -ls /usr/${USERNAME}
+for i in ${path}
+do
+    ${HADOOP_HOME}/bin/hdfs dfs -put $i /usr/$USER/source/
+    rm -rf $i
+chmod +x hdfs
+done
+
