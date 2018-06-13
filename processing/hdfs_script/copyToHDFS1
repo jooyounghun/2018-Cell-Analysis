@@ -1,0 +1,4 @@
+#!/bin/bash
+for ((i=1;i<104;i++)); do
+    /home/project/hadoop/bin/hdfs dfs -put /home/project/Mask_RCNN/results/nucleus/$i /user/project/Mask_RCNN
+done

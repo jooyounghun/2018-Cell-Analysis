@@ -1,0 +1,6 @@
+#! /bin/bash
+for i in {0..103}
+    do
+      CUDA_VISIBLE_DEVICES='0'   python3 samples/nucleus/nucleus.py detect --dataset=../processTemp --subset=$i --weights=logs/nucleus20180520T1407/mask_rcnn_nucleus_0080.h5
+    wait
+done

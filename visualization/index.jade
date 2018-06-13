@@ -1,0 +1,100 @@
+extends layout
+
+
+block content
+   
+   h1 Latest Technology Final Project 
+   h1 <strong>Cell Analysis</strong>
+    
+   .maintable
+     form(action='none', method='post')
+       table.form
+         tr
+           td.card(rowspan='6')
+             img#marble(src='http://henryworld.ipdisk.co.kr:80/publist/HDD1/sharing/rawdata/C2DL-MSC.gif',width='256px',height='192px',alt='Marble')
+         th(scope='row') CELL Information
+         hd.decinput
+           select#dropSel(onchange='changeMarble(this.form)')
+             option C2DL-MSC
+             option C3DH-H157
+             option C3DL-MDA231
+             option DIC-C2DH-HeLa
+             option Fluo-N3DH-CE
+             option Fluo-N3DL-DRO
+             option N2D-SIM
+             option N2DH-GOWT1
+             option N2DL-HeLa
+             option N3D-SIM
+             option N3DH-CHO
+             option PhC-C2DH-U373
+             option PhC-C2DL-PSCss
+
+         tr
+           th(scope='row') Microscope
+             td
+              input(type='text', readonly='readonly', name='Microscope', value='PerkinElmer UltraVIEW ERS')
+         tr  
+           th(scope='row') Objective lens
+             td
+              input(type='text', readonly='readonly', name ='Objective_lens', value='Plan-Neofluar 10x/0.3 (Plan-Apo 20x/0.75)')
+        
+         tr  
+           th(scope='row') Pixel or Voxel size
+             td
+              input(type='text',readonly='readonly', name='Pixel_size',value='(microns): 0.3 x 0.3 (0.3977 x 0.3977)')
+
+         tr
+           th(scope='row') Time step
+             td
+              input(type='text', readonly = 'readonly', name='Time_step', value='20 (30) min')
+        
+    tr
+      td.control(colspan='10')
+        input(type='text',readonly='readonly', name='descript', size='70', value='Rate mesenchymal stem cells on a flat polyacrylamide substrate (2D) Dr. F. Prosper. Cell Therapy laboratory.Center for Applied Medical REsearch (CIMA) Pamplona. Spain')
+
+ 
+   nav.navbar.navbar-default
+    .container-fluid
+      .navbar-header
+        a.navbar-brand(href='#') Cell Image Processing
+      ul.nav.navbar-nav
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+            | Cell List 
+            span.caret
+          ul.dropdown-menu
+            li
+              a(onclick="CELL()") C2DL-MSC
+            li
+              a(onclick="C3DH_H157()") C3DH-H157
+            li
+              a(onclick="C3DL_HT1080()") C3DL-MDA231
+            li
+              a(onclick="DIC_C2DH_CE()") DIC-C2DH-CE
+            li
+              a(onclick="Fluo_N3DH_CE()") Fluo-N3DH-CE
+            li
+              a(onclick="Fluo_N3DL_DRO()") Fluo-N3DL-DRO
+            li
+              a(onclick="N2D_SIM()") N2D-SIM
+            li
+              a(onclick="N2DH_GOWT1()") N2DH-GOWT1
+            li
+              a(onclick="N2DL_HeLa()") N2DL-HeLa
+            li
+              a(onclick="N3D_SIM()") N3D-SIM
+            li
+              a(onclick="N3DH_CHO()") N3DH_CHO
+            li
+              a(onclick="PhC_C2DH_U373()") PhC-C2DH-U373
+            li
+              a(onclick="PhC_C2DL_PSCss()") PhC-C2DL-PSCss
+  
+
+   #mybeforegif(stype='height: 680px; margin-left: 40px').col-md-11.col-sm-1.col-md-1.col-sm-1
+          
+ 
+        
+   #myDiv(style='height: 680px; margin-left: 40px').col-md-11.col-sm-1
+      .col-md-1.col-sm-1
+ 
