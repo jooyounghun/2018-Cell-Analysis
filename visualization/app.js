@@ -44,7 +44,7 @@ app.get('/', function(req,res){
 
 
 app.listen(server.port, function(){
-    console.log('node-rest-demo pid %s listening on %d', process.pid, server.port);});
+    console.log('node-visualization-demo pid %s listening on %d', process.pid, server.port);});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
