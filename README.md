@@ -66,6 +66,12 @@ If you want to know more about the above algorithm, please refer to the link bel
 * Node.js 5.12.0
 * opencv 3.4.0
 
+### hadoop, spark configuration
+* master node with 3 slave nodes
+* ssh, ip configuration
+* hadoop configration
+* spark configuration
+
 ### Preprocessing
 #### Unzip dataset
 
