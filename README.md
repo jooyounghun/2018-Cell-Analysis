@@ -70,11 +70,11 @@ If you want to know more about the above algorithm, please refer to the link bel
 * master node with 3 slave nodes
 * [ssh, ip configuration](https://github.com/philjjoon/2018-1-GROUP-2/blob/master/configuration/host/hosts)
 * hadoop configration
-    -[master](https://github.com/philjjoon/2018-1-GROUP-2/tree/master/configuration/hadoop/master)
-    -[slave](https://github.com/philjjoon/2018-1-GROUP-2/tree/master/configuration/hadoop/slave)
+  * [master](https://github.com/philjjoon/2018-1-GROUP-2/tree/master/configuration/hadoop/master)
+  * [slave](https://github.com/philjjoon/2018-1-GROUP-2/tree/master/configuration/hadoop/slave)
 * spark configuration
-    -master
-    -slave
+  * master
+  * slave
 
 ### Preprocessing
 #### Unzip dataset
