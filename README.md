@@ -73,8 +73,8 @@ If you want to know more about the above algorithm, please refer to the link bel
   * [master](https://github.com/philjjoon/2018-1-GROUP-2/tree/master/configuration/hadoop/master)
   * [slave](https://github.com/philjjoon/2018-1-GROUP-2/tree/master/configuration/hadoop/slave)
 * spark configuration
-  * master
-  * slave
+  * [master](https://github.com/philjjoon/2018-1-GROUP-2/tree/master/configuration/spark/master)
+  * [slave](https://github.com/philjjoon/2018-1-GROUP-2/tree/master/configuration/spark/slave)
 
 ### Preprocessing
 #### Unzip dataset
